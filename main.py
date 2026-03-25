@@ -9,7 +9,7 @@ import os
 from fastapi import FastAPI , Request
 app=FastAPI()
 webhook_path="/webhook"
-webhook_url="https://botforadil.onrender.com"
+webhook_url=f"https://botforadil.onrender.com{webhook_path}"
 TOKEN=os.getenv("TOKEN")
 bot=Bot(token=TOKEN)
 dp=Dispatcher()
